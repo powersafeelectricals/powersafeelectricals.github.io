@@ -1,0 +1,1 @@
+![Power Safe Electricals Logo](logo.png)
