@@ -26,12 +26,31 @@ footer{background:#0f172a;color:white;text-align:center;padding:20px}
 <a href="#about">About</a>
 <a href="#contact">Contact</a>
 </nav><div class="hero">
+<div class="slider">
+<img class="slide" src="hero1.jpg">
+<img class="slide" src="hero2.jpg">
+<img class="slide" src="hero3.jpg">
+</div>
 <h2>Safe • Reliable • Professional</h2>
 <p>House Wiring | Solar | DG | Maintenance</p>
 <br>
 <a class="btn" href="tel:+918137923854">📞 Call Now</a>
 <a class="btn" href="https://wa.me/918137923854">💬 WhatsApp</a>
-</div><section id="services">
+</div>
+<style>
+.slider{max-width:900px;margin:auto;position:relative}
+.slide{width:100%;display:none;border-radius:12px}
+</style>
+<script>
+let i=0;let slides=document.getElementsByClassName('slide');
+function showSlides(){
+for(let j=0;j<slides.length;j++){slides[j].style.display='none';}
+i++;if(i>slides.length){i=1}
+slides[i-1].style.display='block';
+setTimeout(showSlides,3000);
+}
+showSlides();
+</script><section id="services">
 <h2>Our Services</h2>
 <div class="card">
 <h3>House Wiring</h3>
